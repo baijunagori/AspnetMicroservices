@@ -17,7 +17,7 @@ namespace Discount.Grpc.Services
         private readonly ILogger logger;
         private readonly IMapper mapper;
 
-        public DiscountService(IDiscountRepository discountRepository, ILogger logger, IMapper mapper)
+        public DiscountService(IDiscountRepository discountRepository, ILogger<DiscountService> logger, IMapper mapper)
         {
             this.discountRepository = discountRepository;
             this.logger = logger;
